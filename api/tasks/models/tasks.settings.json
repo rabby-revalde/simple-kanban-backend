@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "name": "Tasks",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "column": {
+      "via": "tasks",
+      "model": "columns"
+    }
+  }
+}
